@@ -4,4 +4,5 @@
 - [React Icons](https://react-icons.github.io/react-icons/)  ```npm install react-icons --save```
 - [React Tooltips](https://www.npmjs.com/package/@tippyjs/react) ```npm i @tippyjs/react```
 - [React Toastify](https://www.npmjs.com/package/react-toastify) ```npm i react-toastify```
+- [React Color Picker](https://casesandberg.github.io/react-color/) ```npm install react-color --save```
 
