@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import DeactivateModel from "./DeactivateModel";
+import ChangePasswordModel from "./ChangePasswordModel";
 
-function App() {
+const App = () => {
+  const [modelIsOpen, setModelIsOpen] = useState(false);
+  const [modelIsOpen1, setModelIsOpen1] = useState(false);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <button  type="button" className="btn btn-dark" onClick={() => setModelIsOpen(true)}> Open Model </button> &nbsp;
+      <button type="button" className="btn btn-dark" onClick={() => setModelIsOpen1(true)}> Open Model </button>
+      <DeactivateModel modelIsOpen={modelIsOpen} setModelIsOpen={setModelIsOpen} />
+      <ChangePasswordModel modelIsOpen1={modelIsOpen1} setModelIsOpen1={setModelIsOpen1} />
     </div>
   );
-}
+};
 
 export default App;
